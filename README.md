@@ -94,4 +94,4 @@ See also the list of [contributors](https://github.com/PhamDuyTruong/Web-NC/cont
 
 ## License
 
-[MIT License](https://andreasonny.mit-license.org/2019) © Booking4T
+[MIT License](https://andreasonny.mit-license.org/2019) © Travelgo
