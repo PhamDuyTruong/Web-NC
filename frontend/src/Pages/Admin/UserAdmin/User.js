@@ -48,11 +48,10 @@ function User({ users, actions }) {
 
         // axios handler goes here (PUT)
 
-        const isAdmin = card.role === "admin";
-        const user = {...card};
-        delete user["role"];
-        user.isAdmin = isAdmin;
-
+        const user = { ...card };
+        console.log(card);
+        
+        user.isAdmin = card.role === "admin" ? true : false;
         try {
             setTimeout(() => {
                 actions.updateUser(
@@ -151,7 +150,10 @@ function User({ users, actions }) {
                                     setDisabled(true);
                                     form.setFieldsValue({
                                         ...item,
+                                        profilePic: [{ uid: '-1', url: item.profilePic }],
+                                        role: item.isAdmin ? "admin" : "user",
                                     });
+
                                 } catch (error) {
                                     throw error;
                                 }
@@ -164,7 +166,7 @@ function User({ users, actions }) {
                                         setDisabled(false);
                                         form.setFieldsValue({
                                             ...item,
-                                            profilePic: [{uid: '-1', url: item.profilePic}],
+                                            profilePic: [{ uid: '-1', url: item.profilePic }],
                                             role: item.isAdmin ? "admin" : "user"
                                         });
                                     } catch (e) {
@@ -255,7 +257,7 @@ function User({ users, actions }) {
                         ]}
                         hasFeedback
                     >
-                        <Input.Password readOnly/>
+                        <Input.Password readOnly />
                     </Form.Item>
                     <Form.Item
                         name="phone"

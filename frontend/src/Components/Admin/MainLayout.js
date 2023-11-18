@@ -60,7 +60,7 @@ function MainLayout({children}) {
         />
       </Sider>
       <Layout className='pt-0'>
-        <Header
+      <Header
           className='d-flex justify-content-between ps-1 pe-3'
           style={{
             padding: 0,
