@@ -147,7 +147,7 @@ const authControllers = {
         }
       );
 
-      const link = `${process.env.BASE_URL}:3000/activenewpass?resetToken=${resetToken}`;
+      const link = `${process.env.DEPLOY_URL}/activenewpass?resetToken=${resetToken}`;
       const htmlContent =
         `<p>
                 Bạn đã tiến hành lấy lại thông tin tài khoản trên website của Travelgo <br/>
