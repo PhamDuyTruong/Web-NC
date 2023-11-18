@@ -43,7 +43,7 @@ These instructions will get you a copy of the project up and running on your loc
 Start with cloning this repo on your local machine:
 
 ```sh
-$ git clone Web-NC https://github.com/PhamDuyTruong/Web-NC/
+$ git clone Web-NC https://github.com/PhamDuyTruong/Web-NC/
 $ cd Web-NC
 ```
 
