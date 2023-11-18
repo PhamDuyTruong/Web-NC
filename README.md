@@ -2,7 +2,7 @@
 ![npm version](https://img.shields.io/badge/npm-9.6.4-green)
 ![node](https://img.shields.io/badge/node-v19.0.1-blue)
 
-# Project: Hotel Booking And Management 
+# Project: Web-NC
 
 > The project is a web application developed using **Node.js (ExpressJS)** for *Backend*, **React.js** for *frontend* and **Moogoose** for building and storing database, as well. 
 
